@@ -41,8 +41,6 @@ one for each person. In Full HD, there will be three cards per row, while
 in HD it will be 2 cards, and WVGA, one card per row. The application is
 responsive. This can be verified by changing the screen size at will and
 observing that the card's width will be adjusted accordingly.
-Enclosed in this project, lies a small Java application that expose a
-REST service that returns a list of People.
 
 As requested, no layout frameworks were used. The app contains only HTML5
 standard directives and pure CSS. However, I took the liberty to use a simple CSS Framework
