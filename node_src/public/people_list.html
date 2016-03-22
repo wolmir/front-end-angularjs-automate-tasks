@@ -1,0 +1,21 @@
+<section>
+    <header class="w3-container w3-text-red">
+        <h2>List of People</h2>
+    </header>
+    <section class="w3-row">
+        <section class="w3-container w3-section w3-col full-hd-4 hd-6 wvga-12"
+                 ng-repeat="person in people">
+            <article class="w3-card-16">
+
+                <header class="w3-container w3-red">
+                    <h3>{{person.name}}</h3>
+                </header>
+
+                <section class="w3-container">
+                    <p>{{person.disclosableInfo}}</p>
+                </section>
+
+            </article>
+        </section>
+    </section>
+</section>

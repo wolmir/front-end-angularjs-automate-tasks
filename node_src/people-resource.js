@@ -8,10 +8,10 @@ var People = require('./people.js');
 
 //<people-resoruce>
 function PeopleResource() {
-    this._name = 'people';
+    this.name = 'people';
 
-    this.name = function() {
-        return this._name;
+    this.getName = function() {
+        return this.name;
     };
 
     this.getObjects = function() {

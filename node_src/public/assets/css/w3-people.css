@@ -1,0 +1,23 @@
+/* W3CSS mods as requested in the exercise README */
+
+@media only screen and (min-width:700px) {
+    .w3-col.wvga-12 {
+        width: 99.99999%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .w3-col.hd-6 {
+        width: 49.99999%;
+    }
+}
+
+@media only screen and (min-width:1850px) {
+    .w3-col.full-hd-6 {
+        width: 49.99999%;
+    }
+
+    .w3-col.full-hd-4 {
+        width: 33.33333%;
+    }
+}

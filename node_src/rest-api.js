@@ -10,7 +10,7 @@ function Api (name) {
     this._router = express.Router({caseSensitive: true});
 
     this.registerResource = function(resource) {
-        this._router.route('/' + this.name + '/' + resource.name())
+        this._router.route('/' + this.name + '/' + resource.getName())
         .get(function(req, res) {
             res.status(200).json(resource.getObjects());
         });

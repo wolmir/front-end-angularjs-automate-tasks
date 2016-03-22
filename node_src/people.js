@@ -2,15 +2,23 @@
 
 //<people-model>
 function People(name, disclosableInfo) {
-    this._name = name || '';
-    this._disclosableInfo = disclosableInfo || '';
+    this.name = name || '';
+    this.disclosableInfo = disclosableInfo || '';
 
-    this.name = function(new_name) {
-        return (new_name) ? (this._name = new_name) : this._name;
+    this.getName = function() {
+        return this.name;
     };
 
-    this.disclosableInfo = function(new_disclosableInfo) {
-        return (new_disclosableInfo) ? (this._disclosableInfo = new_disclosableInfo) : this._disclosableInfo;
+    this.setName = function(new_name) {
+        this.name = new_name;
+    };
+
+    this.getDisclosableInfo = function() {
+        return this.disclosableInfo;
+    };
+
+    this.setDisclosableInfo = function(new_disclosableInfo) {
+        this.disclosableInfo = new_disclosableInfo;
     };
 }
 //</people-model>
