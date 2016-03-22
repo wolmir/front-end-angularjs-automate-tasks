@@ -1,47 +1,54 @@
 # front-end-angularjs-automate-tasks
 
-Enclosed in this project, lies a small Java application that expose a 
-REST service that returns a list of People.
+I replaced the Java application shipped with the exercise with a NodeJS
+app. The app is in inside the _node\_src_ folder.
 
-This service can be reached using the following URL:
+The service can be reached using the original URL:
 
     http://localhost:8090/rest/people
 
-It will return a JSON object. To run the service, you will need to build the application.
-For that, you will need to install Java JDK and Maven.
+As usual, it will return an array of JSON objects. To run the app, you will
+need to install NodeJS, either with a binary release from:
 
-After you sucessfully installed everything, just open a command and run:
+    https://nodejs.org/en/download/
 
+Or via the package manager of your OS. The instructions for each platform
+can be found here:
 
-    mvn clean package
-    
-To run, either call Java or run Maven
+    https://nodejs.org/en/download/package-manager/
 
-    java -jar target/people-rest.war
-    
-or
+After that, you need to install all the dependencies and the project itself. To do this,
+change into the _node\_src_ directory and run the following command:
 
-    mvn spring-boot:run
-    
-## Proposed Exercise
+    npm install
 
-Create an app to present the resulting data from the REST service. The way you present is up to you, as long you follow the premises.
+Then, simply call...
 
-Premises:
-* DO NOT USE *\<table\>*
-* The application must be implemented using _AngularJS_. 
-* The application must be _Responsive_.
-* The application must be presented in only three resolutions: _Full HD_, _HD_ and _Wide VGA_. 
-* Do _not_ use any _layout frameworks_ like Bootstrap, Foundation, etc. Implement your own solution. Feel free to use other frameworks for UX 
-* You are free to change the application included in every aspect.
+    node app.js
 
-## Challenges
+...and the server app will be running.
 
-1. Minify using the Automation Tool of your choice, except MAVEN plugins.
-2. Replace the Java Application by one written using Node.js _or_ ...
-3. ...automate test using an end-to-end test framework for AngularJS. 
+The frontend code developed for the exercise is located inside the _public_
+directory, within _node\_src_. If the server app is running, the frontend
+can be reached at:
 
+    http://localhost:8090/index.html
 
-## Measuring results
-Send the exact instructions on how to install dependencies, compile and run
-the application, in a way even a newbie would understand. 
+## Results
+
+The data from the server is presented with a set of card-like sections,
+one for each person. In Full HD, there will be three cards per row, while
+in HD it will be 2 cards, and WVGA, one card per row. The application is
+responsive. This can be verified by changing the screen size at will and
+observing that the card's width will be adjusted accordingly.
+Enclosed in this project, lies a small Java application that expose a
+REST service that returns a list of People.
+
+As requested, no layout frameworks were used. The app contains only HTML5
+standard directives and pure CSS. However, I took the liberty to use a simple CSS Framework
+to do the heavy-lifting. The framework is called W3CSS and can be found here:
+
+    http://www.w3schools.com/w3css/default.asp
+
+There is an additional file, called _w3-people.css_ which contains the
+HD screen definitions that makes the app responsive.
