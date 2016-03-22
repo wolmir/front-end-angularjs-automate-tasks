@@ -1,0 +1,26 @@
+{
+  "name": "front-end-angularjs-automate-tasks-node-backend",
+  "version": "1.0.0",
+  "description": "A simple REST service for People resources.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wolmir/front-end-angularjs-automate-tasks.git"
+  },
+  "keywords": [
+    "angularjs",
+    "nodejs",
+    "express"
+  ],
+  "author": "Wolmir Nemitz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "underscore": "^1.8.3"
+  }
+}
